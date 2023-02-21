@@ -1,0 +1,30 @@
+import java.util.*;
+public class HomeworkLab6
+{
+    public static void main(String[] args)
+    {
+        Base K = new Base();
+        K.Namecol();
+    }
+ }
+   class Base{
+    Map<String,String> data = new HashMap<String,String>();
+    void Namecol(){
+     for (int i = 1 ; i<=4;i++){
+      Scanner user = new 
+      Scanner(System.in);
+      System.out.println("Name : ");
+      String name=user.nextLine();
+      
+      Scanner col = new
+      Scanner(System.in);
+      System.out.println("Colour : ");
+      String Colour=col.nextLine();
+     
+     data.put(name,Colour);
+      System.out.println("Data"+data);
+      System.out.println("Name"+data.keySet());
+      System.out.println("Colour"+data.values());
+     }
+  }
+}
